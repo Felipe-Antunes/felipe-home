@@ -1,0 +1,154 @@
+*{
+	margin:0;
+	padding:0;
+}
+.menu{
+	width: 100%;
+	height: 50px;
+	background-color:#ED5B00; /*cinza escuro da faixa superior*/
+	font-family: 'Arial';
+}
+
+.menu ul {
+	list-style: none;
+	position: relative;
+}
+.menu ul li {
+	width: 150px;
+	float: left;
+}
+.menu a {
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background-color: #ED5B00;/*laranja da faixa superior*/
+	color: white; /*cor das letras*/
+}
+.menu ul ul{
+	position: absolute;
+	visibility: hidden; 
+}
+.menu ul li:hover ul{
+	visibility: visible;
+}
+.menu a:hover{
+	background-color: #ED5B00; /*verde do hover*/
+	color: white; /*branco da letra*/
+}
+.menu ul ul li{
+	float: none;
+	border-bottom: solid 1px #ccc;
+}
+.menu ul ul li a{
+	background-color: #FF7724 /*laranja mais fraco*/
+}
+label[for="bt_menu"]{
+	padding: 5px;
+	background-color: #ED5B00;/*cor do botão*/
+	color: #fff;
+	font-family: 'Arial';
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+#bt_menu{
+	display: none;
+}
+label[for="bt_menu"]{
+	display: none;
+}
+
+@media(max-width: 800px){
+
+	label[for="bt_menu"]{
+	display: block;
+}
+	.menu ul li {
+		width: 100%;
+		float: none; 
+
+	}
+	#bt_menu:checked ~ .menu{
+		margin-left: 0;
+	}
+	.menu{
+		margin-top: 5px;
+		margin-left: -100%;
+		transition: all .4s;
+	}
+
+	.menu ul ul{
+		position: static;
+		overflow: hidden;
+		max-height: 0;
+		transition: all .4s;
+	}
+	.menu ul li:hover ul{
+		height: auto;
+		max-height: 50px; /*altere se tiver mais itens*/
+	}
+}
+
+/*--------------------------------------------------------------------------*/
+body {
+	
+	background-color: #B4D1D1;
+}
+
+h1 {
+	color: white;
+	font-size: 30pt;
+	font-family:  arial;
+	
+}
+
+/*----------------------------------------------------------------------------*/
+
+
+#field-login{ /*edição do formulário de login fieldset*/
+
+	border-color: #FF7724; /*laranja mais fraco*/
+	border-radius: 20px;
+	color: white;
+	
+	width: 400px;
+	margin-left: 470px;
+	height: 400px;
+	padding: 40px;
+
+}
+
+#field-login legend{
+	background-color:  #FF7724; /*laranja mais fraco*/
+	margin-left: 85px;
+	font-size: 20pt;
+	background-color:  #FF7724; /*laranja mais fraco*/
+	border-radius: 20px;
+	padding: 10px;
+}
+
+#field-login label{
+
+	margin-left: 38px;
+	font-size: 25pt;
+
+}
+
+#field-login input {
+
+	font-size: 20pt;
+	margin-left: 38px;
+	color: white;
+	padding: 5pt;
+	border-radius: 20px;
+	background-color: #B4D1D1;
+
+}
+
+
+
+
+

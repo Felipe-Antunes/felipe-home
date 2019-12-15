@@ -1,0 +1,80 @@
+body {
+	background-color: #B4D1D1;
+}
+
+h1 {
+	color: #ffffff;
+	font-size: 25pt;
+	font-family: Arial sans-serif;
+}
+
+#fieldset-css {
+	border-radius: 15px;
+	border-color: black;
+	margin-left: 465px;
+	padding: 20px;
+	width: 400px;
+	height: 400px;
+}
+
+#fieldset-css legend {
+	border-radius: 25px;
+	background-color: #666666;
+	padding: 10px;
+	font-size: 15pt;
+}
+
+#fieldset-css label {
+	font-size: 25pt;
+}
+
+#fieldset-css input {
+	font-size: 20pt;
+	border-radius: 15pt;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+.menu{
+	width: 100%;
+	height: 50px;
+	background-color: #666666;
+	font-family: 'Arial';
+}
+
+.menu ul {
+	list-style: none;
+	position: relative;
+}
+.menu ul li {
+	width: 150px;
+	float: left;
+}
+.menu a {
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background-color: #666666;
+	color: white; /*cor das letras*/
+}
+.menu ul ul{
+	position: absolute;
+	visibility: hidden; 
+}
+.menu ul li:hover ul{
+	visibility: visible;
+}
+.menu a:hover{
+	background-color: #ED5B00; /*verde do hover*/
+	color: white; /*branco da letra*/
+}
+.menu ul ul li{
+	float: none;
+	border-bottom: solid 1px #ccc;
+}
+.menu ul ul li a{
+	background-color: #666666;
+}
